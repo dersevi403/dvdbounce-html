@@ -1,0 +1,26 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background: transparent;
+  overflow: hidden;
+}
+
+#stage {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+}
+
+img.logo {
+  position: absolute;
+  width: auto;
+  height: auto;      /* natural size or set via JS */
+  image-rendering: pixelated; /* nearest-neighbor scaling */
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+  transform: translate(0px, 0px);
+  will-change: transform;
+}
+
